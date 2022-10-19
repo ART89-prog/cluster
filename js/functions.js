@@ -22,78 +22,40 @@ $(() => {
 	// Маска ввода
 	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
 
-	// Выбор файла
-	$('body').on('change', '.form input[type=file]', function () {
-		let label = $(this).closest('.file').find('label')
 
-		label.addClass('active')
-		label.find('span').text($(this).val())
-	})
 
-	$('body').on('click', '.form .file .remove_btn', function (e) {
+	// Скрол к пунктам меню
+	$(".scroll").on("click", function(e){
+		e.preventDefault();
+		let id = $(this).attr("href");
+
+		$("html, body").animate({
+				scrollTop: $(id).offset().top + "px"
+			}, {
+				duration: 1500,
+				easing: "swing"
+		});
+	});
+
+
+	// Кнопка 'Вверх'
+	$('body').on('click', '.buttonUp button', function(e) {
 		e.preventDefault()
 
-		let field = $(this).closest('.field')
-
-		field.find('input[type=file]').val('')
-		field.find('label').removeClass('active')
-		field.find('label span').text('Прикрепить файл')
+		$('body, html').stop(false, false).animate({
+			scrollTop: 0
+		}, 1000)
 	})
 
 
-	// Аккордион
-	$('body').on('click', '.accordion .accordion_item .head', function (e) {
-		e.preventDefault()
-
-		const $item = $(this).closest('.accordion_item'),
-			$accordion = $(this).closest('.accordion')
-
-		if ($item.hasClass('active')) {
-			$item.removeClass('active').find('.data').slideUp(400)
+	$(window).scroll(function(){
+		// Кнопка 'Вверх'
+		if( $(window).scrollTop() > $(window).innerHeight() ) {
+			$('.buttonUp').fadeIn(300)
 		} else {
-			$accordion.find('.accordion_item').removeClass('active')
-			$accordion.find('.data').slideUp(400)
-
-			$item.addClass('active').find('.data').slideDown(400)
+			$('.buttonUp').fadeOut(200)
 		}
 	})
-
-
-	// Табы
-	var locationHash = window.location.hash
-
-	$('body').on('click', '.tabs button', function (e) {
-		e.preventDefault()
-
-		if (!$(this).hasClass('active')) {
-			const $parent = $(this).closest('.tabs_container'),
-				activeTab = $(this).data('content'),
-				$activeTabContent = $(activeTab),
-				level = $(this).data('level')
-
-			$parent.find('.tabs:first button').removeClass('active')
-			$parent.find('.tab_content.' + level).removeClass('active')
-
-			$(this).addClass('active')
-			$activeTabContent.addClass('active')
-		}
-	})
-
-	if (locationHash && $('.tabs_container').length) {
-		const $activeTab = $('.tabs button[data-content=' + locationHash + ']'),
-			$activeTabContent = $(locationHash),
-			$parent = $activeTab.closest('.tabs_container'),
-			level = $activeTab.data('level')
-
-		$parent.find('.tabs:first button').removeClass('active')
-		$parent.find('.tab_content.' + level).removeClass('active')
-
-		$activeTab.addClass('active')
-		$activeTabContent.addClass('active')
-
-		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
-	}
-
 
 	// Fancybox
 	Fancybox.defaults.autoFocus = false

@@ -54,25 +54,25 @@
 						<nav class="menu row">
 																		
 							<div class="item">
-								<a href="/">Описание</a>
+								<a href="#description" class="scroll">Описание</a>
 							</div>
 							<div class="item">
-								<a href="/">Реализация</a>
+								<a href="#realization" class="scroll">Реализация</a>
 							</div>
 							<div class="item">
-								<a href="/">Компоненты</a>
+								<a href="#components" class="scroll">Компоненты</a>
 							</div>
 							<div class="item">
-								<a href="/">Установка и внедрение</a>
+								<a href="#installation" class="scroll">Установка и внедрение</a>
 							</div>
 							<div class="item">
-								<a href="/">Документы</a>
+								<a href="/" class="scroll">Документы</a>
 							</div>
 							<div class="item">
-								<a href="/">Клиенты</a>
+								<a href="/" class="scroll">Клиенты</a>
 							</div>
 							<div class="item">
-								<a href="/">Контакты</a>
+								<a href="/" class="scroll">Контакты</a>
 							</div>								
 						</nav>
 
@@ -100,7 +100,7 @@
 				</section>
 
 
-				<section class="description">
+				<section class="description" id="description">
 					<div class="cont">
 						<div class="description_title title">КРАТКОЕ ОПИСАНИЕ ВОЗМОЖНОСТЕЙ</div>
 						<ul>
@@ -115,7 +115,7 @@
 				</section>
 
 
-				<section class="realization">
+				<section class="realization" id="realization">
 					<div class="cont">
 						<div class="realization_wrap">
 							<div class="realization_info">
@@ -130,7 +130,7 @@
 				</section>
 
 
-				<section class="components">
+				<section class="components" id="components">
 					<div class="cont">
 						<div class="components_title title">Перечень и функционал компонентов ПО</div>
 						<div class="components_items">
@@ -207,13 +207,15 @@
 								</ul>
 							</div>
 							<div class="components_item">
-								<div class="components_item-img">
-									<img src="images/components_img.svg" alt="">
-								</div>
-								<div class="components_item-info">
-									<div class="components_item-title">Закрытая часть модулей и компонентов ПО </div>
-									<div class="components_item-text">Предназначена для служебного использования и обслуживается специалистами ООО ЕАИС «Оружейный кластер»:</div>	
-								</div>								
+								<div class="components_item-wrap">
+									<div class="components_item-img">
+										<img src="images/components_img.svg" alt="">
+									</div>
+									<div class="components_item-info">
+										<div class="components_item-title">Закрытая часть модулей и компонентов ПО </div>
+										<div class="components_item-text">Предназначена для служебного использования и обслуживается специалистами ООО ЕАИС «Оружейный кластер»:</div>	
+									</div>		
+								</div>															
 								<ul>
 									<li>Интеграционная шина – компонент, обеспечивающий централизованный и унифицированный событийно-ориентированный обмен сообщениями между модулями ПО на принципах сервис-ориентированной архитектуры (на схеме представлен в виде связей между компонентами);</li>
 									<li>Модуль Платежи и финансовый контроль – обеспечивает функционал и процессы проверки корректности проведения платежей и операций;</li>
@@ -229,10 +231,10 @@
 				</section>
 
 
-				<section class="installation">
+				<section class="installation" id="installation">
 					<div class="cont">
 						<div class="installation_title title">установка, внедрение и техническая поддержка</div>
-						<div class="installation_ttext">ПЭВМ ОРУЖЕЙНЫЙ КЛАСТЕР не предусматривает передачу ПО, документации по установке ПО и самостоятельную установку ПО Заказчиком. Установка каждой копии ПО выполняется специалистами ООО ЕАИС «Оружейный кластер» в рамках внедрения под конкретного Заказчика. </div>
+						<div class="installation_text">ПЭВМ ОРУЖЕЙНЫЙ КЛАСТЕР не предусматривает передачу ПО, документации по установке ПО и самостоятельную установку ПО Заказчиком. Установка каждой копии ПО выполняется специалистами ООО ЕАИС «Оружейный кластер» в рамках внедрения под конкретного Заказчика. </div>
 						<div class="installation_items">
 							<div class="installation_item">
 								<div class="installation_item-title">Установка</div>
@@ -261,6 +263,52 @@
 					</div>
 				</section>
 
+
+				<section class="callback">
+					<div class="cont">
+						<div class="callback_wrap">
+							<div class="callback_left">
+								<div class="callback_left-title">По вопросам приобретения и эксплуатации</div>
+								<a href="tel:74954774391" class="callback_phone">
+									<img src="images/phone.svg" alt="">
+									<span>+7 (495) 477 43 91</span>
+								</a>
+								<a href="mailto:sales@eais-ok.ru" class="callback_email">
+									<img src="images/email.svg" alt="">
+									<span><b>Вопросы приобретения:</b> sales@eais-ok.ru</span>
+								</a>
+								<a href="mailto:servicedesk@eais-ok.ru" class="callback_email">
+									<img src="images/email.svg" alt="">
+									<span><b>Вопросы эксплуатации:</b> servicedesk@eais-ok.ru </span>
+								</a>
+							</div>
+							<div class="callback_right">
+								<div class="callback_right-title">Обратный звонок</div>
+								<div class="callback_right-text">Отправьте запрос на консультации по ПО</div>
+								<form>
+									<div class="line">
+										<div class="field">
+											<label for="name">Как вас зовут?</label>
+											<input id="name" type="text" placeholder="Ваше имя">
+										</div>
+									</div>
+									<div class="line">
+										<div class="field">
+											<label for="name">Номер телефона</label>
+											<input id="name" type="tel" placeholder="+7 (___) ___-__-__">
+										</div>
+									</div>
+									<button type="submit">
+										<span>Отправить запрос</span>
+									</button>
+									<div class="form-politic">Я подтверждаю согласие на обработку моих персональных данных (закон №152-ФЗ «О персональных данных») и соглашаюсь с политикой конфиденциальности</div>
+								</form>
+							</div>
+						</div>
+						<div class="callback_price">*Стоимость внедрения и оказания услуг технической поддержки определяется по результатам обследования объекта и внедрения <a href="#">системы</a>.</div>
+					</div>
+				</section>
+
 				
 				
 
@@ -273,6 +321,10 @@
 				</div>
 			</footer>
 
+
+			<div class="buttonUp" style="display: none;">
+				<button type="button"></button>
+			</div>
 
 			<div class="overlay"></div>
 		</div>
