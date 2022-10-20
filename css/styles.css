@@ -444,16 +444,16 @@ header .menu .item.current-menu-item>a {
     font-size: 30px;
     line-height: 80px;
     letter-spacing: -0.015em;
-    color: #000000;      
+    color: var(--text_color);      
     margin-bottom: 60px;
 }
 .first-section_text {
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 50px;
     text-align: justify;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--text_color2);
 }
 .first-section_img {
     margin-top: 95px;
@@ -472,10 +472,10 @@ header .menu .item.current-menu-item>a {
 }
 .title {
     font-weight: 600;
-    font-size: 25px;
+    font-size: var(--font_size_title);
     line-height: 80px;
     letter-spacing: -0.015em;
-    color: #000000;   
+    color: var(--text_color);  
     text-transform: uppercase;
 }
 .description ul {
@@ -491,10 +491,10 @@ header .menu .item.current-menu-item>a {
 }
 .description ul li {    
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 30px;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--text_color2);
     position: relative;
     padding-left: 52px;
     width: calc(50% - 35px);
@@ -545,11 +545,11 @@ header .menu .item.current-menu-item>a {
 }
 .realization_text {
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 50px;
     text-align: justify;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--text_color2);
 }
 
 
@@ -576,7 +576,7 @@ header .menu .item.current-menu-item>a {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: -0.015em;
-    color: #000000;   
+    color: var(--text_color);    
     margin-bottom: 25px;
 }
 .components_item-text {
@@ -584,7 +584,7 @@ header .menu .item.current-menu-item>a {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--text_color2);
     margin-bottom: 42px;
 }
 .components ul {
@@ -593,10 +593,10 @@ header .menu .item.current-menu-item>a {
 .components ul li {
     margin-bottom: 16px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 30px;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--text_color2);
     position: relative;
     padding-left: 50px;
 }
@@ -638,11 +638,11 @@ header .menu .item.current-menu-item>a {
 }
 .components_item:last-child .components_item-text {
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 38px;
     text-align: justify;
     letter-spacing: -0.015em;
-    color: #000000;   
+    color: var(--text_color);    
     margin-bottom: 0;
 }
 .components_item-img {
@@ -660,11 +660,11 @@ header .menu .item.current-menu-item>a {
 }
 .installation_text {
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 50px;
     text-align: justify;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--text_color2);
     margin-bottom: 50px;
 }
 .installation_items {
@@ -683,7 +683,7 @@ header .menu .item.current-menu-item>a {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: -0.015em;
-    color: #000000;   
+    color: var(--text_color);  
     margin-bottom: 23px;
 }
 .installation_item-text {
@@ -691,7 +691,7 @@ header .menu .item.current-menu-item>a {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--text_color2);
     margin-bottom: 42px;
 }
 .installation ul {
@@ -700,10 +700,10 @@ header .menu .item.current-menu-item>a {
 .installation ul li {
     margin-bottom: 15px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 30px;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--text_color2);
     position: relative;
     padding-left: 50px;
 }
@@ -754,7 +754,7 @@ header .menu .item.current-menu-item>a {
     font-weight: 700;
     font-size: 28px;
     line-height: 28px;
-    color: #000000; 
+    color: var(--text_color);  
     margin-bottom: 85px; 
     margin-top: 10px; 
 }
@@ -764,7 +764,7 @@ header .menu .item.current-menu-item>a {
     font-weight: 500;
     font-size: 28px;
     line-height: 28px;
-    color: #000000;
+    color: var(--text_color);  
     text-decoration: none;
     margin-bottom: 128px;
 }
@@ -772,9 +772,9 @@ header .menu .item.current-menu-item>a {
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 25px;
+    font-size: var(--font_size_title);
     line-height: 28px;
-    color: #000000;
+    color: var(--text_color);  
     text-decoration: none;
     margin-bottom: 24px;
 }
@@ -786,7 +786,7 @@ header .menu .item.current-menu-item>a {
     font-size: 20px;
     line-height: 36px;
     letter-spacing: -0.015em;
-    color: #000000;
+    color: var(--text_color);  
     margin-right: 8px;
 }
 .callback_phone img,
@@ -801,7 +801,7 @@ header .menu .item.current-menu-item>a {
     font-weight: 700;
     font-size: 48px;
     line-height: 48px;
-    color: #000000; 
+    color: var(--text_color);  
     margin-bottom: 12px;
 }
 .callback_right-text {
@@ -815,7 +815,7 @@ header .menu .item.current-menu-item>a {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    color: #000000; 
+    color: var(--text_color);  
     margin-bottom: 8px; 
     display: block;
 }
@@ -830,7 +830,7 @@ header .menu .item.current-menu-item>a {
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
-    color: #000;
+    color: var(--text_color);  
 }
 .callback form .line {
     margin-bottom: 24px;
@@ -862,7 +862,7 @@ header .menu .item.current-menu-item>a {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: -0.015em;
-    color: #000000;    
+    color: var(--text_color);     
 }
 .callback_price a {
     color: #18A0FB;
@@ -893,7 +893,7 @@ header .menu .item.current-menu-item>a {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--text_color2);
 }
 .requirements_item-img {
     text-align: center;
@@ -906,10 +906,10 @@ header .menu .item.current-menu-item>a {
 }
 .requirements ul li {
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 30px;
     letter-spacing: -0.015em;
-    color: #000000;
+    color: var(--text_color);  
     margin-bottom: 18px;
 }
 .requirements ul li:last-child {
@@ -922,6 +922,8 @@ header .menu .item.current-menu-item>a {
 }
 .requirements-po .requirements_items {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     margin-left: -5px;
     margin-bottom: 40px;
 }
@@ -939,10 +941,10 @@ header .menu .item.current-menu-item>a {
 .requirements-po ul li {
     margin-bottom: 19px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 30px;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--text_color2);
     position: relative;
     padding-left: 50px;
 }
@@ -979,6 +981,8 @@ header .menu .item.current-menu-item>a {
 }
 .documents_items {
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     margin-left: -60px;
 }
 .documents_items > * {
@@ -995,7 +999,7 @@ header .menu .item.current-menu-item>a {
     line-height: 30px;
     text-align: center;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--text_color2);
 }
 
 
@@ -1039,10 +1043,10 @@ header .menu .item.current-menu-item>a {
 .requisites ul li {
     margin-bottom: 21px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 30px;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--text_color2);
     position: relative;
     padding-left: 63px;
 }
@@ -1080,11 +1084,11 @@ header .menu .item.current-menu-item>a {
 }
 .text_block p {
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--font_size);
     line-height: 50px;
     text-align: justify;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--text_color2);
 }
 
 
@@ -1135,7 +1139,7 @@ footer {
     line-height: 24px;
     text-align: center;
     letter-spacing: -0.015em;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--text_color2);
 }
 .footer_logo {
     margin-left: 230px;
