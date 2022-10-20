@@ -33,9 +33,9 @@
         margin-bottom: 20px;
     }
     .title2 {
-        font-size: 18px;
+        font-size: 19px;
         line-height: 26px;
-        margin-bottom: 12px;
+        margin-bottom: 17px;
     }
     .components_item-text, 
     .installation_item-text {
@@ -115,6 +115,44 @@
     }
     .documents_items > * {
         width: calc(100%/2 - 20px);
+    }
+    .footer_top {
+        margin-bottom: 20px;
+    }
+    .footer_bottom-link {
+        margin-bottom: 15px;
+    }
+    footer {
+        margin-bottom: 25px;
+    }
+    .requisites ul {
+        margin-left: 0;
+    }
+    .requisites {
+        margin-bottom: 30px;
+    }
+    .footer_logo {
+        margin-left: auto;
+        margin-right: auto;
+        order: -1;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer_top {
+        flex-wrap: wrap;
+    }
+    .footer_top ul:last-child {
+        align-items: flex-start;
+    }
+    .requisites ul li {
+        padding-left: 45px;
+        margin-bottom: 15px;
+    }
+    .clients {
+        margin-bottom: 40px;
+    }
+    .text_block-wrap {
+        padding-top: 30px;
     }
 
 

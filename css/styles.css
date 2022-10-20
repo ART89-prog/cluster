@@ -1019,6 +1019,9 @@ header .logo-mob {
     width: calc(100%/6 - 60px);
     margin-left: 60px;
 }
+.documents_item {
+    text-decoration: none;
+}
 .documents_item-img {
     text-align: center;
 }
@@ -1065,9 +1068,7 @@ header .logo-mob {
     margin-bottom: 47px;
 }
 .requisites ul {
-    list-style: none;
-    padding-bottom: 60px;
-    border-bottom: 1px solid var(--bg2);
+    list-style: none;    
     margin-left: 23px;
 }
 .requisites ul li {
@@ -1110,7 +1111,11 @@ header .logo-mob {
 
 /* text_block */
 .text_block {
-    margin-bottom: 61px;
+    margin-bottom: 61px;    
+}
+.text_block-wrap {
+    padding-top: 62px;
+    border-top: 1px solid var(--bg2);
 }
 .text_block p {
     font-weight: 400;

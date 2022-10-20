@@ -196,6 +196,15 @@
     .footer_top ul li:last-child {
         margin-bottom: 0;
     }
+    .text_block p {
+        line-height: 1.8;
+    }
+    .footer_top ul:last-child {
+        align-items: flex-end;
+    }
+    .footer_top ul:last-child li {
+        margin-right: 0;
+    }
 
 
     

@@ -1,6 +1,64 @@
 @media (max-width: 479px) {
 
-
+    .requirements_items {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+    .requirements_items > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .requirements-po .requirements_items {
+        margin-left: 0px;
+    }
+    .requirements-po .requirements_items > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+    .requirements_item-title {
+        margin-bottom: 7px;
+    }
+    .clients_items {
+        margin-left: 0px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .clients_items > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .clients_item {
+        margin: 10px auto;
+    }
+    .requisites ul {
+        padding-bottom: 20px;
+    }
+    .requisites {
+        margin-bottom: 20px;
+    }
+    .footer_logo {
+        margin-left: 40px;
+    }
+    .footer_top ul {
+        width: 100%;
+        margin-bottom: 10px;  
+        margin-left: 40px;     
+    }
+    .footer_top ul li {
+        margin-bottom: 10px; 
+    }
+    .footer_bottom-link a:first-child {
+        margin-right: 30px;
+    }
+    .first-section_img,
+    .realization_img,
+    .components_item-img {
+        width: 310px;
+        height: 312px;
+    }
  
 
    
