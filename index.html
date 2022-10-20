@@ -28,9 +28,9 @@
 
 		
 		<!-- Подключение файлов стилей -->
-		<link rel="stylesheet" href="css/fancybox.css">
 		<link rel="stylesheet" href="css/styles.css">
 
+		<link rel="stylesheet" href="css/response_1300.css" media="print, (max-width: 1300px)">
 		<link rel="stylesheet" href="css/response_1187.css" media="print, (max-width: 1187px)">
 		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
 		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
@@ -66,19 +66,19 @@
 								<a href="#installation" class="scroll">Установка и внедрение</a>
 							</div>
 							<div class="item">
-								<a href="/" class="scroll">Документы</a>
+								<a href="#documents" class="scroll">Документы</a>
 							</div>
 							<div class="item">
-								<a href="/" class="scroll">Клиенты</a>
+								<a href="#clients" class="scroll">Клиенты</a>
 							</div>
 							<div class="item">
-								<a href="/" class="scroll">Контакты</a>
+								<a href="#requisites" class="scroll">Контакты</a>
 							</div>								
 						</nav>
 
-						<button class="contact_callback contact_callback-click" data-content="#callback_modal">
+						<a href="#callback" class="contact_callback scroll">
 							<span>Заявка</span>
-						</button>
+						</a>
 						
 					</div>	
 									
@@ -105,12 +105,16 @@
 						<div class="description_title title">КРАТКОЕ ОПИСАНИЕ ВОЗМОЖНОСТЕЙ</div>
 						<ul>
 							<li>Ведение и быстрый доступ к актуальной информации о клиентах, контрагентах, сделках, состоянии складов и материальной базы;</li>
-							<li>Оперативность обслуживания клиентов и проведения сделок;</li>
-							<li>Автоматизация и контроль работы персонала, согласованное взаимодействие между сотрудниками и подразделениями;</li>
 							<li>Формализация схем взаимодействия с клиентами и контрагентами, автоматизация документооборота;</li>
-							<li>Быстрое получение всех необходимых отчетных данных и аналитической информации;</li>
-							<li>API для интеграции с внешними информационными системами.</li>
 						</ul>
+						<ul>
+							<li>Оперативность обслуживания клиентов и проведения сделок;</li>
+							<li>Быстрое получение всех необходимых отчетных данных и аналитической информации;</li>
+						</ul>
+						<ul>
+							<li>Автоматизация и контроль работы персонала, согласованное взаимодействие между сотрудниками и подразделениями;</li>
+							<li>API для интеграции с внешними информационными системами.</li>
+						</ul>				
 					</div>
 				</section>
 
@@ -135,7 +139,7 @@
 						<div class="components_title title">Перечень и функционал компонентов ПО</div>
 						<div class="components_items">
 							<div class="components_item">
-								<div class="components_item-title">Модуль Стрелковый тир</div>
+								<div class="components_item-title title2">Модуль Стрелковый тир</div>
 								<div class="components_item-text">Обеспечивает функционал и процессы управления стрелковыми объектами:</div>
 								<ul>
 									<li>Бронирование стрелковых галерей;</li>
@@ -151,7 +155,7 @@
 								</ul>
 							</div>
 							<div class="components_item">
-								<div class="components_item-title">Модуль Клиенты</div>
+								<div class="components_item-title title2">Модуль Клиенты</div>
 								<div class="components_item-text">Обеспечивает функционал и процессы управления профилями клиентов:</div>
 								<ul>
 									<li>Управление профилем клиента – создание, редактирование, удаление;</li>
@@ -168,7 +172,7 @@
 								</ul>
 							</div>
 							<div class="components_item">
-								<div class="components_item-title">Модуль КХО</div>
+								<div class="components_item-title title2">Модуль КХО</div>
 								<div class="components_item-text">Обеспечивает функционал и процессы управления складами и КХО:</div>
 								<ul>
 									<li>Учет оружия;</li>
@@ -178,7 +182,7 @@
 								</ul>
 							</div>
 							<div class="components_item">
-								<div class="components_item-title">Модуль Гражданское оружие</div>
+								<div class="components_item-title title2">Модуль Гражданское оружие</div>
 								<div class="components_item-text">Обеспечивает функционал и процессы обучения и аттестации, с целью получения лицензии на владение гражданским оружием, продления действующих разрешений:</div>
 								<ul>
 									<li>Первичное получение лицензии;</li>
@@ -189,7 +193,7 @@
 								</ul>
 							</div>
 							<div class="components_item">
-								<div class="components_item-title">Модуль Документы</div>
+								<div class="components_item-title title2">Модуль Документы</div>
 								<div class="components_item-text">Обеспечивает функционал и процессы управления базой документов:</div>
 								<ul>
 									<li>Загрузка, просмотр и удаление документов компании;</li>
@@ -198,7 +202,7 @@
 								</ul>
 							</div>
 							<div class="components_item">
-								<div class="components_item-title">Модуль Администрирование</div>
+								<div class="components_item-title title2">Модуль Администрирование</div>
 								<div class="components_item-text">Обеспечивает функционал и процессы настройки общедоступных модулей ПО:</div>
 								<ul>
 									<li>Управление профилями сотрудников компании, распределение ролей и уровней доступа;</li>
@@ -212,7 +216,7 @@
 										<img src="images/components_img.svg" alt="">
 									</div>
 									<div class="components_item-info">
-										<div class="components_item-title">Закрытая часть модулей и компонентов ПО </div>
+										<div class="components_item-title title2">Закрытая часть модулей и компонентов ПО </div>
 										<div class="components_item-text">Предназначена для служебного использования и обслуживается специалистами ООО ЕАИС «Оружейный кластер»:</div>	
 									</div>		
 								</div>															
@@ -237,7 +241,7 @@
 						<div class="installation_text">ПЭВМ ОРУЖЕЙНЫЙ КЛАСТЕР не предусматривает передачу ПО, документации по установке ПО и самостоятельную установку ПО Заказчиком. Установка каждой копии ПО выполняется специалистами ООО ЕАИС «Оружейный кластер» в рамках внедрения под конкретного Заказчика. </div>
 						<div class="installation_items">
 							<div class="installation_item">
-								<div class="installation_item-title">Установка</div>
+								<div class="installation_item-title title2">Установка</div>
 								<div class="installation_item-text">Установка ПО выполняется в рамках модели предоставления услуг SaaS:</div>
 								<ul>
 									<li>С размещением на серверном оборудовании ООО ЕАИС «Оружейный кластер», с размещением в центре обработки данных ООО ЕАИС «Оружейный кластер» и обеспечением постоянного удаленного доступа для персонала Заказчика;</li>
@@ -245,7 +249,7 @@
 								</ul>
 							</div>
 							<div class="installation_item">
-								<div class="installation_item-title">Внедрение</div>
+								<div class="installation_item-title title2">Внедрение</div>
 								<div class="installation_item-text">Затраты на внедрение ПО в рамках конкретного предприятия определяются на этапе обследования объекта, поскольку зависят от ряда индивидуальных факторов:</div>
 								<ul>
 									<li>Набор внедряемых модулей;</li>
@@ -256,7 +260,7 @@
 								</ul>
 							</div>	
 							<div class="installation_item">
-								<div class="installation_item-title">Техническая поддержка ПО</div>
+								<div class="installation_item-title title2">Техническая поддержка ПО</div>
 								<div class="installation_item-text">Техническая поддержка осуществляется в формате консультирования пользователей и администраторов ПО, и дистанционного подключения специалистов ООО ЕАИС «Оружейный кластер» для обслуживания ПО, в режиме 24/7.</div>
 							</div>	
 						</div>						
@@ -264,7 +268,7 @@
 				</section>
 
 
-				<section class="callback">
+				<section class="callback" id="callback">
 					<div class="cont">
 						<div class="callback_wrap">
 							<div class="callback_left">
@@ -309,15 +313,216 @@
 					</div>
 				</section>
 
-				
-				
+
+				<section class="requirements">
+					<div class="cont">
+						<div class="requirements_title title2">Требования к аппаратному обеспечению</div>
+						<div class="requirements_items">
+							<div class="requirements_item">
+								<div class="requirements_item-title">Процессор</div>
+								<div class="requirements_item-img">
+									<img src="images/tr1.svg" alt="">
+								</div>
+							</div>
+							<div class="requirements_item">
+								<div class="requirements_item-title">ОЗУ</div>
+								<div class="requirements_item-img">
+									<img src="images/tr2.svg" alt="">
+								</div>
+							</div>
+							<div class="requirements_item">
+								<div class="requirements_item-title">Жесткий диск</div>
+								<div class="requirements_item-img">
+									<img src="images/tr3.svg" alt="">
+								</div>
+							</div>
+						</div>
+						<ul>
+							<li>Двухпроцессорный, не менее четырех ядер каждый.</li>
+							<li>Частота – не ниже 4 ГГц. Поддерживает работу с 64-х разрядными приложениями на аппаратном уровне.</li>
+							<li>Поддерживается облачное развертывания с применением технологий виртуализации.</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="requirements requirements-po">
+					<div class="cont">
+						<div class="requirements_title title2">Требование к системному ПО сервера</div>
+						<div class="requirements_items">
+							<div class="requirements_item">
+								<div class="requirements_item-title">Операционная<br> система</div>
+								<div class="requirements_item-img">
+									<img src="images/tr4.svg" alt="">
+								</div>
+							</div>
+							<div class="requirements_item">
+								<div class="requirements_item-title">Система<br> управления<br> базами данных</div>
+								<div class="requirements_item-img">
+									<img src="images/tr5.svg" alt="">
+								</div>
+							</div>
+							<div class="requirements_item">
+								<div class="requirements_item-title">Виртуальная машина<br> Java</div>
+								<div class="requirements_item-img">
+									<img src="images/tr6.svg" alt="">
+								</div>
+							</div>
+							<div class="requirements_item">
+								<div class="requirements_item-title">Web-сервер</div>
+								<div class="requirements_item-img">
+									<img src="images/tr7.svg" alt="">
+								</div>
+							</div>
+							<div class="requirements_item">
+								<div class="requirements_item-title">Программно-аппаратный<br> комплекс распознавания<br> документов</div>
+								<div class="requirements_item-img">
+									<img src="images/tr8.svg" alt="">
+								</div>
+							</div>
+						</div>
+						<ul>
+							<li>Наименование ПО и версия: Ubuntu 20.04</li>
+							<li>Правообладатель: Canonical</li>
+							<li>Лицензия: Free software + some proprietary device drivers</li>
+							<li>Количество: 1</li>
+						</ul>
+					</div>
+				</section>
+
+
+				<section class="documents" id="documents">
+					<div class="cont">
+						<div class="documents_title title2">Документы</div>
+						<div class="documents_items">
+							<div class="documents_item">
+								<div class="documents_item-img">
+									<img src="images/document.svg" alt="">
+								</div>
+								<div class="documents_item-title">Руководство администратора</div>
+							</div>
+							<div class="documents_item">
+								<div class="documents_item-img">
+									<img src="images/document.svg" alt="">
+								</div>
+								<div class="documents_item-title">Описание системы</div>
+							</div>
+							<div class="documents_item">
+								<div class="documents_item-img">
+									<img src="images/document.svg" alt="">
+								</div>
+								<div class="documents_item-title">Свидетельство о регистрации</div>
+							</div>
+							<div class="documents_item">
+								<div class="documents_item-img">
+									<img src="images/document.svg" alt="">
+								</div>
+								<div class="documents_item-title">Сертификат на домен</div>
+							</div>
+							<div class="documents_item">
+								<div class="documents_item-img">
+									<img src="images/document.svg" alt="">
+								</div>
+								<div class="documents_item-title">Компоненты при разработке</div>
+							</div>
+							<div class="documents_item">
+								<div class="documents_item-img">
+									<img src="images/document.svg" alt="">
+								</div>
+								<div class="documents_item-title">Компоненты для установки</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+
+				<section class="clients" id="clients">
+					<div class="cont">
+						<div class="clients_title title2">Клиенты</div>
+						<div class="clients_items">
+							<div class="clients_item">
+								<img src="images/client1.png" alt="">
+							</div>
+							<div class="clients_item">
+								<img src="images/client2.png" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="requisites" id="requisites">
+					<div class="cont">
+						<div class="requisites_title title2">Реквизиты</div>
+						<ul>
+							<li>ООО ЕАИС «ОРУЖЕЙНЫЙ КЛАСТЕР»</li>
+							<li>ИНН 5029265898</li>
+							<li>р/с № 40702810901280001047</li>
+							<li>БИК 044525411</li>
+							<li>ФИЛИАЛ «ЦЕНТРАЛЬНЫЙ» БАНКА ВТБ (ПАО) Г.МОСКВА</li>
+							<li>к/с № 30101810145250000411</li>
+							<li>141009, Московская область, г.Мытищи, ул. Новослободская вл.1.,ст.1</li>
+						</ul>
+					</div>
+				</section>
+
+
+				<section class="text_block">
+					<div class="cont">
+						<p>ПЭВМ ОРУЖЕЙНЫЙ КЛАСТЕР правомерно введена в гражданский оборот на территории Российской Федерации, экземпляры ПО либо права использования ПО, услуги по предоставлению доступа к ПО свободно реализуются на всей территории Российской Федерации, отсутствуют ограничения, установленные в том числе иностранными государствами и препятствующие распространению или иному использованию ПО для электронных вычислительных машин и базы данных на территории Российской Федерации или территориях отдельных субъектов Российской Федерации.</p>
+						<p>Сведения о ПО не составляют государственную тайну и ПО не содержит сведений, составляющих государственную тайну.</p>
+						<p>Исключительное право на ПО на территории всего мира и на весь срок действия исключительного права согласно свидетельству о государственной регистрации ПО № 2022616302 принадлежит Общество с ограниченной ответственностью ЕАИС «Оружейный кластер».</p>
+						<p>ПО не имеет принудительного обновления и управления из-за рубежа.</p>
+						<p>Гарантийное обслуживание, техническая поддержка и модернизация ПО осуществляются российской коммерческой или некоммерческой организацией без преобладающего иностранного участия либо гражданином Российской Федерации, а именно, собственными силами и средствами российской коммерческой организации Общество с ограниченной ответственностью ЕАИС «Оружейный кластер».</p>
+					</div>
+				</section>
 
 			</div>
 
 
 			<footer>
 				<div class="cont">
-					
+					<div class="footer_top">
+						<ul>
+							<li>
+								<a href="#">Описание</a>
+							</li>
+							<li>
+								<a href="#">Реализация</a>
+							</li>
+							<li>
+								<a href="#">Компоненты</a>
+							</li>
+						</ul>
+						<div class="footer_logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+						<ul>
+							<li>
+								<a href="#">Установка и внедрение</a>
+							</li>
+							<li>
+								<a href="#">Документы</a>
+							</li>
+							<li>
+								<a href="#">Клиенты</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer_bottom">
+						<div class="footer_bottom-link">
+							<a href="tel:74954774391">
+								<img src="images/phone.svg" alt="">
+							</a>
+							<a href="mailto:sales@eais-ok.ru ">
+								<img src="images/email.svg" alt="">
+							</a>	
+						</div>
+						<div class="footer_copy">© ЕАИС «Оружейный кластер»  2022 | Все права защищены</div>
+					</div>
 				</div>
 			</footer>
 
@@ -335,15 +540,10 @@
 		</div>
 
 
-
-	
-
-
 		<!-- Подключение javascript файлов -->
 		<script src="js/jquery-3.5.0.min.js"></script>
 		<script src="js/lozad.min.js"></script>
 		<script src="js/inputmask.min.js"></script>
-		<script src="js/fancybox.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 

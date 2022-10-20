@@ -1,26 +1,87 @@
 @media print, (max-width: 1187px) {
 
-    .text_block img {
-        margin-left: 20px;
-        width: 480px;
-        height: 308px;
+    header .mob_menu_btn {
+        display: flex;
     }
+    header .menu {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
 
-    .home-page .header_description .title {
-        font-size: 46px;
-        line-height: 58px;
-        margin-bottom: 44px;
+        display: flex;
+        overflow: auto;
+
+        width: 295px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 30px 20px;
+
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+
+        background: #fff;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
     }
-    .home-page .header_description {
-        margin-top: 90px;
+    header .menu.show {
+        transform: translateX(0);
     }
-    .home-page header {
-        padding-bottom: 70px;
+    header .menu .close_btn {
+        display: flex;
     }
-
-
-
-
-
+    header .menu .item {
+        width: 100%;
+    }
+    header .menu .item + .item {
+        margin-left: 0;
+    }
+    header .menu .item > a {
+        display: block;
+        height: auto;
+        padding: 17px 0;
+        text-align: left;
+        color: #000;
+    }  
+    .mob_menu_btn span {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 2px;
+        transition: background .2s linear;
+        background: #000; 
+    }
+    .mob_menu_btn span:before, 
+    .mob_menu_btn span:after {
+        position: absolute;
+        top: -8px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: '';
+        transition: .2s linear;
+        background: #000;
+    }
+    .mob_menu_btn span:after {
+        top: 8px;
+    }
+    .mob_menu_btn.active span {
+        background: transparent;
+    }
+    .mob_menu_btn.active span:before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    .mob_menu_btn.active span:after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
 
 }
