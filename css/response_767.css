@@ -1,9 +1,122 @@
 @media print, (max-width: 767px) {
 
-    :root
-    {
-        --font_size_title: 30px;
+    :root {
+        --font_size: 16px;
+        --font_size_title: 20px;
     }
+    .first-section_title {
+        font-size: 23px;
+        line-height: 1.8;
+        margin-bottom: 15px;
+    }
+    .first-section_img {
+        width: 430px;
+        height: 432px;
+    }
+    .title {
+        line-height: 1.8;
+    }
+    .description_title, 
+    .realizationn_title, 
+    .components_title {
+        margin-bottom: 15px;
+    }
+    .description ul li,
+    .components ul li {
+        padding-left: 45px;
+    }
+    .realization_img {
+        width: 430px;
+        height: 432px;
+    }
+    .realization {
+        margin-bottom: 20px;
+    }
+    .title2 {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 12px;
+    }
+    .components_item-text, 
+    .installation_item-text {
+        font-size: 17px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+    .components_item-img {
+        width: 433px;
+        height: 437px;
+    }
+    .callback_left-title {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .callback_phone img, 
+    .callback_email img {
+        margin-right: 12px;
+        width: 37px;
+        height: 37px;
+    }
+    .callback_phone, 
+    .callback_email {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+    .callback_email b {
+        font-size: 18px;
+        line-height: 29px;
+        margin-right: 5px;
+    }
+    .callback_right-title {
+        font-size: 20px;
+        line-height: 1.8;
+        margin-bottom: 5px;
+    }
+    .callback_right {
+        margin-top: 10px;
+    }
+    .callback_right-text {
+        font-size: 17px;
+        line-height: 23px;
+        margin-bottom: 13px;
+    }
+    .callback form label {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+    .callback form button {
+        margin-top: 24px;
+    }
+    .callback_price {
+        font-size: 16px;
+    }
+    .requirements_item-title {
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+    .requirements ul {
+        padding: 14px;
+    }
+    .requirements ul li {
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    .requirements-po .requirements_items > * {
+        width: calc(100%/2 - 10px);
+        margin-left: 10px;
+    }
+    .requirements-po .requirements_items {
+        margin-left: -10px;
+    }
+    .requirements_item-title br {
+        display: none;
+    }
+    .documents_items > * {
+        width: calc(100%/2 - 20px);
+    }
+
 
 
 

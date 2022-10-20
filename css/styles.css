@@ -311,12 +311,13 @@ header .cont {
     justify-content: space-between;
 }
 .contact_callback {
+    text-decoration: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.015em;
     color: #FFFFFF;
-    background: #18A0FB;
+    background: var(--bg2);
     border-radius: 6px;
     padding: 10px;
     width: 130px;
@@ -324,7 +325,6 @@ header .cont {
     transition: background .4s;
     text-align: center;
 }
-
 .contact_callback:hover {
     background: #0782d5;
 }
@@ -403,7 +403,7 @@ header .menu .item > a {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.015em;
-    color: #18A0FB;
+    color: var(--bg2);
 
     position: relative;
 
@@ -423,7 +423,12 @@ header .menu .item:hover>a,
 header .menu .item.current-menu-item>a {
     color: #476FFD;
 }
-
+.contact_callback-mob {
+    display: none;
+}
+header .logo-mob {
+    display: none;
+}
 
 
 /* first-section */
@@ -457,6 +462,13 @@ header .menu .item.current-menu-item>a {
 }
 .first-section_img {
     margin-top: 95px;
+    width: 512px;
+    height: 505px;
+    flex-shrink: 0;
+}
+.first-section_img img {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -506,7 +518,7 @@ header .menu .item.current-menu-item>a {
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    border: 6px solid #18A0FB;
+    border: 6px solid var(--bg2);
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -517,7 +529,7 @@ header .menu .item.current-menu-item>a {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background: #18A0FB;
+    background: var(--bg2);
     top: 50%;
     transform: translateY(-50%);
     left: 12px;
@@ -550,6 +562,15 @@ header .menu .item.current-menu-item>a {
     text-align: justify;
     letter-spacing: -0.015em;
     color: var(--text_color2);
+}
+.realization_img {
+    width: 642px;
+    height: 644px;
+    flex-shrink: 0;
+}
+.realization_img img {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -606,7 +627,7 @@ header .menu .item.current-menu-item>a {
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    border: 6px solid #18A0FB;
+    border: 6px solid var(--bg2);
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -617,7 +638,7 @@ header .menu .item.current-menu-item>a {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background: #18A0FB;
+    background: var(--bg2);
     top: 50%;
     transform: translateY(-50%);
     left: 12px;
@@ -647,6 +668,12 @@ header .menu .item.current-menu-item>a {
 }
 .components_item-img {
     flex-shrink: 0;
+    width: 563px;
+    height: 537px;
+}
+.components_item-img img {
+    width: 100%;
+    height: 100%;
 }
 .components_item:last-child .components_item-info {
     width: calc(50% - 25px);
@@ -713,7 +740,7 @@ header .menu .item.current-menu-item>a {
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    border: 6px solid #18A0FB;
+    border: 6px solid var(--bg2);
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -724,7 +751,7 @@ header .menu .item.current-menu-item>a {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background: #18A0FB;
+    background: var(--bg2);
     top: 50%;
     transform: translateY(-50%);
     left: 12px;
@@ -772,7 +799,7 @@ header .menu .item.current-menu-item>a {
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: var(--font_size_title);
+    font-size: 25px;
     line-height: 28px;
     color: var(--text_color);  
     text-decoration: none;
@@ -838,7 +865,7 @@ header .menu .item.current-menu-item>a {
 .callback form button {
     width: 100%;
     height: 48px;    
-    background: #18A0FB;
+    background: var(--bg2);
     border-radius: 4px;  
     display: flex;
     align-items: center;
@@ -849,6 +876,9 @@ header .menu .item.current-menu-item>a {
     color: #FFFFFF;
     margin-bottom: 20px;
     margin-top: 40px;
+}
+.callback form button:hover {
+    background: #0782d5;
 }
 .form-politic {
     font-weight: 400;
@@ -865,7 +895,7 @@ header .menu .item.current-menu-item>a {
     color: var(--text_color);     
 }
 .callback_price a {
-    color: #18A0FB;
+    color: var(--bg2);
 }
 
 
@@ -900,7 +930,7 @@ header .menu .item.current-menu-item>a {
 }
 .requirements ul {
     padding: 35px 20px 39px;
-    border: 1px solid #18A0FB;
+    border: 1px solid var(--bg2);
     border-radius: 11px;
     list-style: none;
 }
@@ -954,7 +984,7 @@ header .menu .item.current-menu-item>a {
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    border: 6px solid #18A0FB;
+    border: 6px solid var(--bg2);
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -965,7 +995,7 @@ header .menu .item.current-menu-item>a {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background: #18A0FB;
+    background: var(--bg2);
     top: 50%;
     transform: translateY(-50%);
     left: 12px;
@@ -1037,7 +1067,7 @@ header .menu .item.current-menu-item>a {
 .requisites ul {
     list-style: none;
     padding-bottom: 60px;
-    border-bottom: 1px solid #18A0FB;
+    border-bottom: 1px solid var(--bg2);
     margin-left: 23px;
 }
 .requisites ul li {
@@ -1059,7 +1089,7 @@ header .menu .item.current-menu-item>a {
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    border: 6px solid #18A0FB;
+    border: 6px solid var(--bg2);
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -1070,7 +1100,7 @@ header .menu .item.current-menu-item>a {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background: #18A0FB;
+    background: var(--bg2);
     top: 50%;
     transform: translateY(-50%);
     left: 12px;
@@ -1102,7 +1132,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 11px;
-    border-bottom: 1px solid #18A0FB;
+    border-bottom: 1px solid var(--bg2);
     margin-bottom: 30px;
 }
 .footer_top ul {
@@ -1122,7 +1152,7 @@ footer {
     font-size: 14px;
     line-height: 17px;
     letter-spacing: -0.015em;
-    color: #18A0FB;
+    color: var(--bg2);
 }
 .footer_bottom-link {
     display: flex;

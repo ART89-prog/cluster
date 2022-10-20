@@ -2,6 +2,7 @@
 
     header .mob_menu_btn {
         display: flex;
+        order: 1;
     }
     header .menu {
         position: fixed;
@@ -83,5 +84,84 @@
         top: 0;
         transform: rotate(-45deg);
     }
+
+    .callback_left {
+        margin-right: 50px;
+        max-width: 469px;
+    }
+    .callback_email span {
+        white-space: inherit;
+    }
+    .realization_img {
+        width: 508px;
+        height: 510px;
+    }
+    .realizationn_title {
+        margin-bottom: 30px;
+    }
+    .title {
+        line-height: 2;
+    }
+    .first-section_img {
+        width: 473px;
+        height: 461px;
+    }
+    .description ul {
+        margin-bottom: 40px;
+    }
+    .first-section {
+        margin-bottom: 40px;
+    }
+    .components_items > * {
+        margin-bottom: 50px;
+    }
+    .installation_item-text {
+        font-size: 18px;
+    }
+    .callback_left-title {
+        font-size: 28px;
+    }
+    .callback_right-title {
+        font-size: 34px;
+    }
+    .callback_right-text {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+    .callback_phone {
+        font-size: 25px;
+        line-height: 28px;
+        margin-bottom: 88px;
+    }
+    .callback_price  {
+        font-size: 22px;
+    }
+    .footer_top ul li {
+        margin-right: 15px;
+    }
+    .documents_items {
+        margin-left: -20px;
+    }
+    .documents_items > * {
+        width: calc(100%/6 - 20px);
+        margin-left: 20px;
+    }
+    .contact_callback {
+        display: none;
+    }
+    .contact_callback-mob {
+        display: block;
+        width: 100%;
+    }
+    header .logo-mob {
+        display: flex;
+    }
+    
+
+
+
+
+
 
 }
