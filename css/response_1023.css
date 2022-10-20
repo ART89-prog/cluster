@@ -137,29 +137,12 @@
     .documents {
         margin-bottom: 40px;
     }
-    .requirements_items {
-        justify-content: space-around;
-        margin-left: -20px;
-    }
-    .requirements_items > * {
-        width: calc(100%/3 - 20px);
-        margin-left: 20px;
-    }
     .requirements ul {
         padding: 20px;
     }
     .requirements ul li {
         margin-bottom: 10px;
         line-height: 1.8;
-    }
-    .requirements-po .requirements_items {
-        margin-left: -20px;
-        margin-bottom: 20px;
-    }
-    .requirements-po .requirements_items > * {
-        width: calc(100%/3 - 20px);
-        margin-left: 20px;
-        margin-bottom: 40px;
     }
     .documents_items {
         margin-bottom: -30px;

@@ -1,21 +1,5 @@
 @media (max-width: 479px) {
 
-    .requirements_items {
-        margin-left: 0;
-        flex-wrap: wrap;
-    }
-    .requirements_items > * {
-        width: 100%;
-        margin-left: 0px;
-    }
-    .requirements-po .requirements_items {
-        margin-left: 0px;
-    }
-    .requirements-po .requirements_items > * {
-        width: 100%;
-        margin-left: 0px;
-        margin-bottom: 15px;
-    }
     .requirements_item-title {
         margin-bottom: 7px;
     }
@@ -58,6 +42,15 @@
     .components_item-img {
         width: 310px;
         height: 312px;
+    }
+    .requirements_item {
+        width: 200px;
+    }
+    .tabs {
+        margin-bottom: 5px;
+    }
+    .requirements-po .requirements_item {
+        width: 160px;
     }
  
 

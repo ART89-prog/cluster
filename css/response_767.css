@@ -103,16 +103,6 @@
         margin-bottom: 15px;
         line-height: 1.5;
     }
-    .requirements-po .requirements_items > * {
-        width: calc(100%/2 - 10px);
-        margin-left: 10px;
-    }
-    .requirements-po .requirements_items {
-        margin-left: -10px;
-    }
-    .requirements_item-title br {
-        display: none;
-    }
     .documents_items > * {
         width: calc(100%/2 - 20px);
     }
@@ -153,6 +143,16 @@
     }
     .text_block-wrap {
         padding-top: 30px;
+    }
+    .tabs {
+        margin-bottom: 20px;
+    }
+
+    .requirements-po .tabs > * {
+        width: 200px;
+    }
+    .requirements-po .tabs {
+        margin-bottom: 20px;
     }
 
 

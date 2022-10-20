@@ -295,6 +295,7 @@ button {
 
 
 
+
 /*------------
     Header
 ------------*/
@@ -928,6 +929,9 @@ header .logo-mob {
 .requirements_item-img {
     text-align: center;
 }
+.requirements_item-img-hov {
+    display: none;
+}
 .requirements ul {
     padding: 35px 20px 39px;
     border: 1px solid var(--bg2);
@@ -946,60 +950,7 @@ header .logo-mob {
     margin-bottom: 0;
 }
 
-.requirements-po .requirements_items {
-    justify-content: space-between;
-    margin-bottom: 117px;
-}
-.requirements-po .requirements_items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-left: -5px;
-    margin-bottom: 40px;
-}
-.requirements-po .requirements_items > * {
-    width: calc(100%/5 - 5px);
-    margin-left: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.requirements-po ul {
-    list-style: none;
-    padding: 41px 20px 55px;
-}
-.requirements-po ul li {
-    margin-bottom: 19px;
-    font-weight: 400;
-    font-size: var(--font_size);
-    line-height: 30px;
-    letter-spacing: -0.015em;
-    color: var(--text_color2);
-    position: relative;
-    padding-left: 50px;
-}
-.requirements-po ul li::before {
-    position: absolute;
-    content: "";
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    border: 6px solid var(--bg2);
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-}
-.requirements-po ul li::after {
-    position: absolute;
-    content: "";
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background: var(--bg2);
-    top: 50%;
-    transform: translateY(-50%);
-    left: 12px;
-}
+
 
 
 /* documents */
@@ -1201,4 +1152,124 @@ footer {
     border: none;
     border-radius: 50%;
     background: url(../images/button_up.svg);
+}
+
+
+
+
+/*----------
+    Tabs
+----------*/
+
+.tabs {
+    display: flex;
+    margin-bottom: 44px;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+.tabs button {
+    position: relative;
+    display: flex;
+    transition: all .4s linear;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.tabs button + button {
+    margin-left: 2px;
+}
+.tabs button:hover .requirements_item-img-hov {
+    display: block;
+}
+.tabs button:hover .requirements_item-img {
+    display: none;
+}
+.tabs button.active .requirements_item-img-hov {
+    display: block;
+}
+.tabs button.active .requirements_item-img {
+    display: none;
+}
+.tab_content {
+    position: relative;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    pointer-events: none;
+    opacity: 0;
+}
+.tab_content.active {
+    visibility: visible;
+    overflow: visible;
+    height: auto;
+    transition: opacity .5s linear;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+
+.requirements-po .tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-left: -110px;
+    margin-bottom: 40px;
+}
+.requirements-po .tabs > * {
+    width: calc(100%/5 - 110px);
+    margin-left: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.requirements-po ul {
+    list-style: none;
+    padding: 41px 20px 55px;
+}
+.requirements-po ul li {
+    margin-bottom: 19px;
+    font-weight: 400;
+    font-size: var(--font_size);
+    line-height: 30px;
+    letter-spacing: -0.015em;
+    color: var(--text_color2);
+    position: relative;
+    padding-left: 50px;
+}
+.requirements-po ul li::before {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 6px solid var(--bg2);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.requirements-po ul li::after {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--bg2);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+}
+.tabs::-webkit-scrollbar { 
+    width: 0; 
+}
+.tabs { 
+    -ms-overflow-style: none; 
+}
+.tabs { 
+    overflow: -moz-scrollbars-none; 
 }
