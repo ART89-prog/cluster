@@ -10,7 +10,7 @@ $(() => {
         $('.overlay').fadeIn(300)
     })
 
-    $('header .close_btn, .overlay').click((e) => {
+    $('header .close_btn, header .menu .item a, .overlay').click((e) => {
         e.preventDefault()
 
         $('header .mob_menu_btn').removeClass('active')
@@ -18,6 +18,7 @@ $(() => {
         $('header .menu').removeClass('show')
         $('.overlay').fadeOut(300)
     })
+
 
 
 	$('body').on('click', '.modal_link', function (e) {
