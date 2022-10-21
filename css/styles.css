@@ -248,7 +248,7 @@ button {
 
 .overlay {
     position: fixed;
-    z-index: 100;
+    z-index: 105;
     top: 0;
     left: 0;
 
@@ -439,7 +439,9 @@ header .logo-mob {
 
 /* first-section */
 
-
+.first-section {
+    margin-top: 120px;
+}
 .first-section_wrap {
     display: flex;
     justify-content: space-between;

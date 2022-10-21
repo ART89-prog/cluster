@@ -6,7 +6,7 @@
     }
     header .menu {
         position: fixed;
-        z-index: 101;
+        z-index: 107;
         top: 0;
         left: 0;
 
@@ -152,10 +152,12 @@
     }
     .contact_callback-mob {
         display: block;
-        width: 100%;
+        width: 100%;  
+        margin-top: 20px;      
     }
     header .logo-mob {
         display: flex;
+        margin-bottom: 20px;
     }
     .requirements_item {
         margin-right: 20px;
