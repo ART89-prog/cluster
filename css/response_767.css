@@ -154,6 +154,10 @@
     .requirements-po .tabs {
         margin-bottom: 20px;
     }
+    .clients_item:nth-child(1) img {
+        width: 215px;
+        height: 72px;
+    }
 
 
 

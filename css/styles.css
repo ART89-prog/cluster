@@ -512,6 +512,7 @@ header .logo-mob {
     padding-left: 52px;
     width: calc(50% - 35px);
     margin-left: 35px;
+    margin-bottom: 60px;
 }
 .description ul li::before {
     position: absolute;

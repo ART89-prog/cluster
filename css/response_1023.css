@@ -134,7 +134,8 @@
     }
     .callback,
     .requirements,
-    .documents {
+    .documents,
+    .clients {
         margin-bottom: 40px;
     }
     .requirements ul {

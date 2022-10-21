@@ -176,6 +176,9 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    .description ul li {
+        margin-bottom: 30px;
+    }
 
 
 
