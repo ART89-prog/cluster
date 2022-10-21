@@ -300,11 +300,15 @@ button {
     Header
 ------------*/
 header {
-    z-index: 3;
+    z-index: 103;
     padding-top: 11px;
     padding-bottom: 11px;
     background: #F7F7F7;
     margin-bottom: 22px;
+    width: 100%;
+    height: 79px;
+    position: fixed;
+    top: 0;
 }
 header .cont {
     display: flex;
@@ -340,6 +344,7 @@ header .logo {
 }
 header .logo img {
     display: block;
+    width: 70%;
 }
 
 header .mob_menu_btn {
@@ -1001,6 +1006,16 @@ header .logo-mob {
     align-items: center;
     margin-left: -90px;
     padding-left: 43px;
+    overflow: auto;
+}
+.clients_items::-webkit-scrollbar { 
+    width: 0; 
+}
+.clients_items { 
+    -ms-overflow-style: none; 
+}
+.clients_items { 
+    overflow: -moz-scrollbars-none; 
 }
 .clients_items > * {
     width: calc(100%/4 - 90px);
@@ -1274,3 +1289,6 @@ footer {
 .tabs { 
     overflow: -moz-scrollbars-none; 
 }
+
+
+

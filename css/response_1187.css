@@ -179,6 +179,9 @@
     .description ul li {
         margin-bottom: 30px;
     }
+    header .logo img {
+        width: 65%;
+    }
 
 
 

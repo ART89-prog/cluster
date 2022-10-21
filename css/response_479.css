@@ -5,10 +5,6 @@
     }
     .clients_items {
         margin-left: 0px;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     .clients_items > * {
         width: inherit;
@@ -60,8 +56,11 @@
         width: 160px;
     }
     .clients_item:nth-child(1) img {
-        width: 274px;
-        height: 92px;
+        width: 247px;
+        height: 83px;
+    }
+    .footer_top ul li {
+        margin-right: 0px;
     }
  
 

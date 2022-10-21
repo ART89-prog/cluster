@@ -21,9 +21,8 @@
     }
     .first-section_info,
     .realization_info {
-        max-width: 688px;
+        max-width: 100%;
         width: 100%;
-        margin-top: 0;
         margin-right: 0px;
     }
     .first-section_text,
