@@ -34,8 +34,11 @@
     header .menu.show {
         transform: translateX(0);
     }
-    header .menu .close_btn {
+    header .close_btn {
         display: flex;
+    }
+    .menu_open header .mob_menu_btn {
+        display: none;
     }
     header .menu .item {
         width: 100%;
@@ -84,7 +87,9 @@
         top: 0;
         transform: rotate(-45deg);
     }
-
+    .menu_open header {
+        background: #595959;
+    }
     .callback_left {
         margin-right: 50px;
         max-width: 469px;

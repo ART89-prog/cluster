@@ -162,6 +162,21 @@
         height: 72px;
     }
 
+    .modal .callback_right-title {
+        font-size: 25px;
+        line-height: 28px;
+        margin-bottom: 7px;
+    }
+    .modal .callback_right-text {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 16px;
+    }
+    .modal.callback form .line {
+        margin-bottom: 13px;
+    }
+    
+
 
 
 

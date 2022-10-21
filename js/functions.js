@@ -30,7 +30,7 @@ $(() => {
 		let id = $(this).attr("href");
 
 		$("html, body").animate({
-				scrollTop: $(id).offset().top + "px"
+				scrollTop: $(id).offset().top - 90
 			}, {
 				duration: 1500,
 				easing: "swing"
@@ -94,15 +94,15 @@ $(() => {
 		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
 	}
 
-	// Fancybox
-	// Fancybox.defaults.autoFocus = false
-	// Fancybox.defaults.dragToClose = false
-	// Fancybox.defaults.l10n = {
-	// 	CLOSE: "Закрыть",
-	// 	NEXT: "Следующий",
-	// 	PREV: "Предыдущий",
-	// 	MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
-	// }
+	Fancybox
+	Fancybox.defaults.autoFocus = false
+	Fancybox.defaults.dragToClose = false
+	Fancybox.defaults.l10n = {
+		CLOSE: "Закрыть",
+		NEXT: "Следующий",
+		PREV: "Предыдущий",
+		MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
+	}
 
 
 	// Моб. версия

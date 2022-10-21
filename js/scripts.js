@@ -10,7 +10,7 @@ $(() => {
         $('.overlay').fadeIn(300)
     })
 
-    $('header .menu .close_btn, .overlay').click((e) => {
+    $('header .close_btn, .overlay').click((e) => {
         e.preventDefault()
 
         $('header .mob_menu_btn').removeClass('active')
@@ -20,16 +20,17 @@ $(() => {
     })
 
 
-    $('body').on('click', '.contact_callback-click', function (e) {
-        e.preventDefault()
+	$('body').on('click', '.modal_link', function (e) {
+	    e.preventDefault()
 
-        Fancybox.close()
+	    $.fancybox.close(true)
 
-        Fancybox.show([{
-            src: $(this).data('content'),
-            type: 'inline'
-        }])
-    })
+	    $.fancybox.open({
+	        src: $(this).data('content'),
+	        type: 'inline',
+	        touch: false
+	    })
+	})
 
 
     $(document).on('change', '.error', function () {

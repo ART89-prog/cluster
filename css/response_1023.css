@@ -191,6 +191,12 @@
     .footer_top ul:last-child li {
         margin-right: 0;
     }
+    .modal.callback {
+        padding: 30px 20px 20px;
+    }
+    .modal.callback {
+        max-width: 480px;
+    }
 
 
     

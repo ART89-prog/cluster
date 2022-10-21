@@ -248,7 +248,7 @@ button {
 
 .overlay {
     position: fixed;
-    z-index: 105;
+    z-index: 102;
     top: 0;
     left: 0;
 
@@ -333,6 +333,9 @@ header .cont {
 .contact_callback:hover {
     background: #0782d5;
 }
+header .cont {
+    position: relative;
+}
 header .logo {
     color: currentColor;
     display: flex;
@@ -368,12 +371,12 @@ header .mob_menu_btn .icon {
     height: 18px;
 }
 
-header .menu .close_btn {
+header .close_btn {
     color: #000;
-
+    
     position: absolute;
     top: 18px;
-    left: 23px;
+    right: 23px;
 
     display: none;
 
@@ -386,11 +389,9 @@ header .menu .close_btn {
     flex-wrap: wrap;
 }
 
-header .menu .close_btn .icon {
+header .close_btn img {
     display: block;
-
-    width: 18px;
-    height: 18px;
+    width: 28px;
 }
 
 
@@ -1293,4 +1294,38 @@ footer {
 }
 
 
+.modal {
+    display: block;
+    display: none;
+    visibility: visible !important;
+    max-width: 480px;
+    width: 100%;
+    border-radius: 15px;
+    max-width: 100%;
+    padding: 45px 30px 30px;
+    background: rgb(241, 240, 240);
+    position: relative;
+}
+.modal .callback_right-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--text_color);
+    margin-bottom: 10px;
+}
+.modal .callback_right-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #A2A1B2;
+    margin-bottom: 25px;
+}
+.modal .callback form label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--text_color);
+    margin-bottom: 5px;
+    display: block;
+}
 
